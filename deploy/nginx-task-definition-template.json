@@ -58,7 +58,7 @@
         "options": {
           "awslogs-group": "${CLUSTER_NAME}-nginx-proxy",
           "awslogs-region": "${AWS_REGION}",
-          "awslogs-create-group": true
+          "awslogs-create-group": "true"
         }
       }
     },
@@ -99,7 +99,7 @@
         "options": {
           "awslogs-group": "${CLUSTER_NAME}-jrcs-letsencrypt-nginx-proxy-companion",
           "awslogs-region": "${AWS_REGION}",
-          "awslogs-create-group": true
+          "awslogs-create-group": "true"
         }
       }
     }

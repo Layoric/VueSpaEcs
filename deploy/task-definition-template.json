@@ -42,7 +42,7 @@
         "options": {
           "awslogs-group": "${CLUSTER_NAME}-${APP_NAME}",
           "awslogs-region": "${AWS_REGION}",
-          "awslogs-create-group": true
+          "awslogs-create-group": "true"
         }
       }
     }
