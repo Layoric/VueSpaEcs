@@ -56,8 +56,9 @@
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
-          "awslogs-group": "nginx-proxy",
-          "awslogs-region": "${AWS_REGION}"
+          "awslogs-group": "${CLUSTER_NAME}-nginx-proxy",
+          "awslogs-region": "${AWS_REGION}",
+          "awslogs-create-group": true
         }
       }
     },

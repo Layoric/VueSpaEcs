@@ -40,9 +40,8 @@
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
-          "awslogs-group": "${APP_NAME}",
-          "awslogs-region": "$",
-          "awslogs-stream-prefix": "awslogs-example"
+          "awslogs-group": "${CLUSTER_NAME}-${APP_NAME}",
+          "awslogs-region": "${AWS_REGION}"
         }
       }
     }

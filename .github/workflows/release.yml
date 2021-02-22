@@ -26,6 +26,7 @@ jobs:
         uses: danielr1996/envsubst-action@1.0.0
         env:
           AWS_REGION: ${{ env.aws_region }}
+          CLUSTER_NAME: ${{ env.cluster_name }}
         with:
           input: deploy/nginx-task-definition-template.json
           output: deploy/nginx-task-definition.json
