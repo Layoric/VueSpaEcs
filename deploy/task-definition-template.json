@@ -36,7 +36,15 @@
       "volumesFrom": [],
       "image": "${IMAGE_URL}",
       "essential": true,
-      "name": "${APP_NAME}"
+      "name": "${APP_NAME}",
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "${APP_NAME}",
+          "awslogs-region": "$",
+          "awslogs-stream-prefix": "awslogs-example"
+        }
+      }
     }
   ]
 }

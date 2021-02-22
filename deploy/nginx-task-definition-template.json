@@ -52,7 +52,14 @@
       "dockerLabels": {
         "com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy": ""
       },
-      "name": "nginx-proxy"
+      "name": "nginx-proxy",
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "nginx-proxy",
+          "awslogs-region": "${AWS_REGION}"
+        }
+      }
     },
     {
       "portMappings": [],
