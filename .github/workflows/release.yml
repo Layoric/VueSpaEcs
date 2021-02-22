@@ -111,6 +111,7 @@ jobs:
           HOST_DOMAIN: ${{ env.domain }}
           LETSENCRYPT_EMAIL: ${{ env.letsencrypt_email }}
           AWS_REGION: ${{ env.aws_region }}
+          CLUSTER_NAME: ${{ env.cluster_name }}
         with:
           input: deploy/task-definition-template.json
           output: deploy/task-definition.json
