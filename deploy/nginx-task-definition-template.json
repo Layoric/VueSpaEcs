@@ -63,6 +63,10 @@
       }
     },
     {
+      "dependsOn": [{
+        "containerName": "nginx-proxy",
+        "condition": "START"
+      }],
       "portMappings": [],
       "cpu": 0,
       "environment": [
