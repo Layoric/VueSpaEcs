@@ -1,4 +1,9 @@
 {
+  "family": "nginx-proxy",
+  "requiresCompatibilities": [
+    "EC2"
+  ],
+  "memory": "192",
   "containerDefinitions": [
     {
       "portMappings": [
@@ -42,7 +47,7 @@
       "dockerSecurityOptions": [],
       "memory": 150,
       "volumesFrom": [],
-      "image": "jwilder/nginx-proxy:0.3.0",
+      "image": "jwilder/nginx-proxy",
       "essential": true,
       "dockerLabels": {
         "com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy": ""
@@ -82,11 +87,6 @@
       "essential": true,
       "name": "jrcs-letsencrypt-nginx-proxy-companion"
     }
-  ],
-  "memory": "150",
-  "family": "proxy-reverso",
-  "requiresCompatibilities": [
-    "EC2"
   ],
   "volumes": [
     {
