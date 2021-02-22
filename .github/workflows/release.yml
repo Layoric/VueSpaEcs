@@ -5,7 +5,7 @@ on:
 jobs:
   # The `init_nginx` job can be deleted if it is already up and running for faster builds, is only needed once.
   init_nginx:
-    runs_on: ubuntu-20.04
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout
         uses: actions/checkout@v2
