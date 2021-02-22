@@ -93,7 +93,15 @@
       "volumesFrom": [],
       "image": "jrcs/letsencrypt-nginx-proxy-companion",
       "essential": true,
-      "name": "jrcs-letsencrypt-nginx-proxy-companion"
+      "name": "jrcs-letsencrypt-nginx-proxy-companion",
+        "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "${CLUSTER_NAME}-jrcs-letsencrypt-nginx-proxy-companion",
+          "awslogs-region": "${AWS_REGION}",
+          "awslogs-create-group": true
+        }
+      }
     }
   ],
   "volumes": [
